@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>PACMAN</title>
+
+    <link rel="stylesheet" href="style.css">
+
+  </head>
+
+  <body>
+    <div style="text-align: center">
+      <h1>PACMAN</h1>
+
+      <canvas id="map" width="455" height="550"></canvas>
+
+      <h2>Use arrow keys to move.</h2>
+
+      <div class="scroll"><p>This game implements A* algorithm to perform the movement of the ghosts. There're 3 modes of movement:</p>
+        <p>- Invincible state: the ghost destination is set in Pacman.</p> 
+         <p>- Vulnerable state: the ghost destination is set in a random tile.</p> 
+         <p>- Dead state: the ghost destination is set in the ghosts' spawn.</p>
+         <p>Some of the extra features that has been implemented are: </p>
+         <p>- Sound effects: <a href="https://www.sounds-resource.com/arcade/pacman/sound/10603/"> Pack resource</a></p> 
+         <p>- Differents levels of dificulty: ghosts' velocity is incremented every 30 seconds.</p> 
+         <p>- Score: collect dots rise the score 10 points, super dots give you 50 points and eating a ghost collects 200 points.</p> 
+       </div>
+      
+    </div>
+
+    <audio id="munch_1"> <source src="sounds/munch_1.wav"></source> </audio>
+    <audio id="munch_2"> <source src="sounds/munch_2.wav"></source> </audio>
+    <audio id="eat_ghost"> <source src="sounds/eat_ghost.wav"></source> </audio>
+    <audio id="siren_1"> <source src="sounds/siren_1.wav"></source> </audio>
+    <audio id="siren_2"> <source src="sounds/siren_2.wav"></source> </audio>
+    <audio id="siren_3"> <source src="sounds/siren_3.wav"></source> </audio>
+    <audio id="siren_4"> <source src="sounds/siren_4.wav"></source> </audio>
+    <audio id="siren_5"> <source src="sounds/siren_5.wav"></source> </audio>
+    <audio id="retreating"> <source src="sounds/retreating.wav"></source> </audio>
+    <audio id="power_pellet"> <source src="sounds/power_pellet.wav"></source> </audio>
+    <audio id="intermission"> <source src="sounds/intermission.wav"></source> </audio>
+    <audio id="death"> <source src="sounds/death.wav"></source> </audio>
+
+    <script src="src/Sounds.js"></script>
+    <script src="src/States.js"></script>
+    <script src="src/Level.js"></script>
+    <script src="src/Actor.js"></script>
+    <script src="src/Ghost.js"></script>
+    
+    <script src="src/Pacman.js"></script>
+    <script src="src/Actions.js"></script>
+    
+    <script src="src/astar.js"></script>
+    <script src="src/Sprite.js"></script>
+    <script src="src/Tilemap.js"></script>
+    <script src="src/Game.js"></script>
+    
+    
+    
+  </body>
+</html>

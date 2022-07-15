@@ -1,0 +1,36 @@
+#map {
+    box-shadow: 10px 10px 20px black;
+  }
+  h1, h2, h3, p {
+    font-family: "Times New Roman", Times, serif;
+    color: rgb(255, 255, 255);
+    text-shadow: 10px 10px 20px black;
+  }
+  a {
+    font-family: "Times New Roman", Times, serif;
+    color: rgb(0, 4, 255);
+    text-shadow: 10px 10px 20px black;
+  }
+
+  body {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    height: 100vh;
+    background: linear-gradient(
+      0deg,
+      rgb(136, 33, 127) 0%,
+      rgb(7, 230, 126) 100%
+    );
+  }
+
+  div.scroll {
+    margin:4px, 4px;
+    padding:4px;
+    background-color: transparent;
+    width: 1500px;
+    height: 150px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    text-align:center;
+}
